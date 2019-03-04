@@ -75,10 +75,11 @@
 		3FE2578D222AEAE90084F69A /* SportsBuff-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				3FE2578E222AEAE90084F69A /* AppDelegate.swift */,
-				3FE25792222AEAE90084F69A /* Main.storyboard */,
-				3FE25795222AEAEA0084F69A /* Assets.xcassets */,
-				3FE25797222AEAEA0084F69A /* LaunchScreen.storyboard */,
+				3FE257B2222D40530084F69A /* Resources */,
+				3FE257B1222D404A0084F69A /* Sources */,
+				3FE257B0222D40350084F69A /* Common */,
+				3FE257AF222D40270084F69A /* Controllers */,
+				3FE257AE222D401F0084F69A /* ViewControllers */,
 				3FE2579A222AEAEA0084F69A /* Info.plist */,
 			);
 			path = "SportsBuff-Demo";
@@ -91,6 +92,93 @@
 				3FE257A5222AEAEA0084F69A /* Info.plist */,
 			);
 			path = "SportsBuff-DemoTests";
+			sourceTree = "<group>";
+		};
+		3FE257AE222D401F0084F69A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FE257B6222D41690084F69A /* Details */,
+				3FE257B5222D41570084F69A /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3FE257AF222D40270084F69A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FE257B7222D417C0084F69A /* DetailsController */,
+				3FE257B8222D41850084F69A /* HomeController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3FE257B0222D40350084F69A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3FE257B1222D404A0084F69A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3FE2578E222AEAE90084F69A /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3FE257B2222D40530084F69A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FE257B4222D40F40084F69A /* Assets */,
+				3FE257B3222D40DD0084F69A /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FE257B3222D40DD0084F69A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3FE25792222AEAE90084F69A /* Main.storyboard */,
+				3FE25797222AEAEA0084F69A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3FE257B4222D40F40084F69A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3FE25795222AEAEA0084F69A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3FE257B5222D41570084F69A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3FE257B6222D41690084F69A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		3FE257B7222D417C0084F69A /* DetailsController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailsController;
+			sourceTree = "<group>";
+		};
+		3FE257B8222D41850084F69A /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
