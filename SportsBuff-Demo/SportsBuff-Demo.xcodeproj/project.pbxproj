@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F71E206222EADD800AA512D /* HomePreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E205222EADD800AA512D /* HomePreviewLayout.swift */; };
+		3F71E208222EAEE300AA512D /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E207222EAEE300AA512D /* CGRect+Extension.swift */; };
+		3F71E20A222EBEA300AA512D /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E209222EBEA300AA512D /* LayoutHelper.swift */; };
 		3FE2578F222AEAE90084F69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2578E222AEAE90084F69A /* AppDelegate.swift */; };
 		3FE25794222AEAE90084F69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE25792222AEAE90084F69A /* Main.storyboard */; };
 		3FE25796222AEAEA0084F69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE25795222AEAEA0084F69A /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F71E205222EADD800AA512D /* HomePreviewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePreviewLayout.swift; sourceTree = "<group>"; };
+		3F71E207222EAEE300AA512D /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		3F71E209222EBEA300AA512D /* LayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
 		3FE2578B222AEAE90084F69A /* SportsBuff-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SportsBuff-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE2578E222AEAE90084F69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE25793222AEAE90084F69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F71E204222EADC800AA512D /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				3F71E205222EADD800AA512D /* HomePreviewLayout.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
 		3FE25782222AEAE90084F69A = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +139,7 @@
 		3FE257B0222D40350084F69A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3FE257CB222D86B60084F69A /* Helpers */,
 				3FE257C8222D81E30084F69A /* Extensions */,
 			);
 			path = Common;
@@ -167,6 +182,7 @@
 		3FE257B5222D41570084F69A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3F71E204222EADC800AA512D /* Display */,
 				3FE257C1222D7FE90084F69A /* Cells */,
 				3FE257B9222D58D50084F69A /* HomeViewController.swift */,
 			);
@@ -208,8 +224,17 @@
 		3FE257C8222D81E30084F69A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3F71E207222EAEE300AA512D /* CGRect+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3FE257CB222D86B60084F69A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F71E209222EBEA300AA512D /* LayoutHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE2578F222AEAE90084F69A /* AppDelegate.swift in Sources */,
+				3F71E208222EAEE300AA512D /* CGRect+Extension.swift in Sources */,
+				3F71E20A222EBEA300AA512D /* LayoutHelper.swift in Sources */,
 				3FE257C4222D801D0084F69A /* HomePreviewCollectionViewCell.swift in Sources */,
 				3FE257C7222D805D0084F69A /* HomePreviewCollectionViewCellModel.swift in Sources */,
 				3FE257BA222D58D50084F69A /* HomeViewController.swift in Sources */,
 				3FE257CA222D84BC0084F69A /* HomeController.swift in Sources */,
+				3F71E206222EADD800AA512D /* HomePreviewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
