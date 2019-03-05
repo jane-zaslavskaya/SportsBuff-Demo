@@ -8,9 +8,13 @@
 
 import Foundation
 
-class HomePreviewCollectionViewCellModel {
+struct HomePreviewCollectionViewCellModel {
+    
+    let imageUrl: String
     
     func setup(on cell: HomePreviewCollectionViewCell) {
-        
+        if let url = URL(string: imageUrl) {
+            cell.imageView.loadImage(from: url)
+        }
     }
 }
