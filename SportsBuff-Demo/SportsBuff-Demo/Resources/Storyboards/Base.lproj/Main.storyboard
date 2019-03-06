@@ -53,14 +53,19 @@
         <!--Followers-->
         <scene sceneID="SIe-ms-i6B">
             <objects>
-                <viewController title="Followers" id="Qz1-4z-WT9" customClass="DetailsViewController" customModule="SportsBuff_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" title="Followers" id="Qz1-4z-WT9" customClass="DetailsViewController" customModule="SportsBuff_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBf-oI-42u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-Yx-V3L">
-                                <rect key="frame" x="30" y="15" width="315" height="588"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-Yx-V3L">
+                                <rect key="frame" x="20" y="15" width="335" height="588"/>
+                                <color key="backgroundColor" red="0.19215686274509802" green="0.20784313725490194" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="Qz1-4z-WT9" id="8Gq-fm-1RD"/>
                                     <outlet property="delegate" destination="Qz1-4z-WT9" id="NaF-cN-Hdj"/>
@@ -70,8 +75,8 @@
                         <color key="backgroundColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gMQ-Gi-cYF" firstAttribute="bottom" secondItem="i0T-Yx-V3L" secondAttribute="bottom" id="39b-FE-nGs"/>
-                            <constraint firstItem="i0T-Yx-V3L" firstAttribute="leading" secondItem="gMQ-Gi-cYF" secondAttribute="leading" constant="30" id="9Cm-nW-Qs4"/>
-                            <constraint firstItem="gMQ-Gi-cYF" firstAttribute="trailing" secondItem="i0T-Yx-V3L" secondAttribute="trailing" constant="30" id="WqF-zd-PW6"/>
+                            <constraint firstItem="i0T-Yx-V3L" firstAttribute="leading" secondItem="gMQ-Gi-cYF" secondAttribute="leading" constant="20" id="9Cm-nW-Qs4"/>
+                            <constraint firstItem="gMQ-Gi-cYF" firstAttribute="trailing" secondItem="i0T-Yx-V3L" secondAttribute="trailing" constant="20" id="WqF-zd-PW6"/>
                             <constraint firstItem="i0T-Yx-V3L" firstAttribute="top" secondItem="gMQ-Gi-cYF" secondAttribute="top" constant="15" id="ghj-Na-2vG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gMQ-Gi-cYF"/>

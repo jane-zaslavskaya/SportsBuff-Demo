@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="FollowerTableViewCell" customModule="SportsBuff_Demo" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="FollowerTableViewCell" customModule="SportsBuff_Demo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="378" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -20,28 +20,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7jh-nF-q9M">
-                        <rect key="frame" x="15" y="10" width="120" height="88.5"/>
+                        <rect key="frame" x="15" y="10" width="80" height="88.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="120" id="9Mh-M9-mOA"/>
+                            <constraint firstAttribute="width" constant="80" id="9Mh-M9-mOA"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mH-B0-WxR">
-                        <rect key="frame" x="150" y="33.5" width="42" height="21"/>
+                        <rect key="frame" x="110" y="33.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ6-8J-FMZ">
-                        <rect key="frame" x="150" y="54.5" width="35.5" height="16"/>
+                        <rect key="frame" x="110" y="54.5" width="35.5" height="16"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7E-gV-VPZ">
-                        <rect key="frame" x="260.5" y="24.5" width="102.5" height="60"/>
+                        <rect key="frame" x="260.5" y="34.5" width="102.5" height="40"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41 yrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH6-n0-gTO">
-                                <rect key="frame" x="20" y="16.5" width="62.5" height="26.5"/>
+                                <rect key="frame" x="20" y="6.5" width="62.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -50,13 +56,13 @@
                         <color key="backgroundColor" red="0.14901960784313725" green="0.15686274509803921" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="IH6-n0-gTO" secondAttribute="trailing" constant="20" id="Hn0-qd-6Fe"/>
-                            <constraint firstAttribute="height" constant="60" id="S9M-HG-4Vt"/>
                             <constraint firstItem="IH6-n0-gTO" firstAttribute="centerY" secondItem="t7E-gV-VPZ" secondAttribute="centerY" id="foT-Xu-6st"/>
                             <constraint firstItem="IH6-n0-gTO" firstAttribute="leading" secondItem="t7E-gV-VPZ" secondAttribute="leading" constant="20" id="lrx-9w-r31"/>
+                            <constraint firstAttribute="height" constant="40" id="zhX-Vx-oIE"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="8"/>
+                                <integer key="value" value="20"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                 <integer key="value" value="1"/>
@@ -88,10 +94,5 @@
             </connections>
             <point key="canvasLocation" x="97.599999999999994" y="144.3778110944528"/>
         </tableViewCell>
-        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FNs-Co-lCa">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="234" y="228"/>
-        </imageView>
     </objects>
 </document>

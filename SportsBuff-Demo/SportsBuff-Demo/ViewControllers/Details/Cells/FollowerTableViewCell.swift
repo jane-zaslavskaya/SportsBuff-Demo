@@ -9,7 +9,12 @@
 import UIKit
 
 class FollowerTableViewCell: UITableViewCell {
-    @IBOutlet weak var ageView: UIView!
+    
+    @IBOutlet weak var ageView: UIView! {
+        didSet {
+            ageView.layer.borderColor = UIColor.white.cgColor
+        }
+    }
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
