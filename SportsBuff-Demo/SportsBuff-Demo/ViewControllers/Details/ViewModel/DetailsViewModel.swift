@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol DetailsViewModelDelegate: class {
-    func refreshData()
-}
-
 class DetailsViewModel {
     
     var elements = [FollowerTableViewCellModel]()
@@ -23,9 +19,9 @@ class DetailsViewModel {
         }
     }
     
-    private weak var delegate: DetailsViewModelDelegate?
+    private weak var delegate: ViewModelDelegate?
     
-    func configure(with delegate: DetailsViewModelDelegate) {
+    func configure(with delegate: ViewModelDelegate) {
         self.delegate = delegate
     }
     

@@ -45,7 +45,16 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension DetailsViewController: DetailsViewModelDelegate {
+extension DetailsViewController: ViewModelDelegate {
+    
+    func showHud() {
+        
+    }
+    
+    func showAlert(with message: String) {
+        
+    }
+    
     func refreshData() {
         tableView.reloadData()
     }
