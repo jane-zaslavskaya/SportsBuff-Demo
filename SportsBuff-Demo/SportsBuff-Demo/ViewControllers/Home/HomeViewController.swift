@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     struct K {
         static let homePreviewCellIdentifier = String(describing: HomePreviewCollectionViewCell.self)
+        static let detailsControllerIdentifier = String(describing: DetailsViewController.self)
     }
 
     @IBOutlet var collectionView: UICollectionView!
@@ -39,11 +40,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = viewModel.model(for: indexPath)
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.homePreviewCellIdentifier, for: indexPath) as? HomePreviewCollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.homePreviewCellIdentifier,
+                                                         for: indexPath) as? HomePreviewCollectionViewCell {
             model.setup(on: cell)
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = mainSB.instantiateViewController(withIdentifier: K.detailsControllerIdentifier)
+            as? DetailsViewController else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
