@@ -15,13 +15,16 @@ class DetailsViewController: UIViewController {
     }
     
     @IBOutlet weak var tableView: UITableView!
+    var viewModel = DetailsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        viewModel.loadData()
     }
     
     func configure() {
+        viewModel.configure(with: self)
         tableView.register(UINib(nibName: K.followerCellIdentifier, bundle: nil),
                            forCellReuseIdentifier: K.followerCellIdentifier)
     }
@@ -29,15 +32,21 @@ class DetailsViewController: UIViewController {
 
 extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfModels()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let model = viewModel.model(for: indexPath)
         if let cell = tableView.dequeueReusableCell(withIdentifier: K.followerCellIdentifier, for: indexPath) as? FollowerTableViewCell {
+            model.setup(on: cell)
             return cell
         }
         return UITableViewCell()
     }
-    
-    
+}
+
+extension DetailsViewController: DetailsViewModelDelegate {
+    func refreshData() {
+        tableView.reloadData()
+    }
 }
