@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     var viewModel = HomeViewModel()
+    @IBOutlet weak var hudView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +49,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension HomeViewController: ViewModelDelegate {
     func showHud() {
-        
+        hudView.startAnimating()
+        hudView.isHidden = false
+    }
+    
+    func hideHud() {
+        hudView.stopAnimating()
+        hudView.isHidden = true
+        UIView.animate(withDuration: 0.5) {
+            self.collectionView.alpha = 1
+        }
     }
     
     func showAlert(with message: String) {
-        
+        showAlert(title: nil, message: message)
     }
     
     func refreshData() {

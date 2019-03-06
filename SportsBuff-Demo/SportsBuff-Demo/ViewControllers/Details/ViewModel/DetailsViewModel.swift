@@ -34,13 +34,17 @@ class DetailsViewModel {
     }
     
     func loadData() {
+        delegate?.showHud()
         APIClient.getFollowers { result in
             switch result {
             case .success(let response):
                 self.followers = response
                 self.delegate?.refreshData()
+                self.delegate?.hideHud()
                 print(response)
             case .failure(let error):
+                self.delegate?.showAlert(with: error.localizedDescription)
+                self.delegate?.hideHud()
                 print(error)
             }
         }

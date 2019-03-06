@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol HomeViewModelDelegate: class {
-    func refreshData()
-}
-
 class HomeViewModel {
     
     var elements = [HomePreviewCollectionViewCellModel]()
@@ -23,9 +19,9 @@ class HomeViewModel {
         }
     }
     
-    private weak var delegate: HomeViewModelDelegate?
+    private weak var delegate: ViewModelDelegate?
     
-    func configure(with delegate: HomeViewModelDelegate) {
+    func configure(with delegate: ViewModelDelegate) {
         self.delegate = delegate
     }
     
@@ -38,13 +34,17 @@ class HomeViewModel {
     }
     
     func loadData() {
+        delegate?.showHud()
         APIClient.getChannels { result in
             switch result {
             case .success(let response):
                 self.channels = response
                 self.delegate?.refreshData()
+                self.delegate?.hideHud()
                 print(response)
             case .failure(let error):
+                self.delegate?.showAlert(with: error.localizedDescription)
+                self.delegate?.hideHud()
                 print(error)
             }
         }

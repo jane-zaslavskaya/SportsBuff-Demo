@@ -16,6 +16,7 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var viewModel = DetailsViewModel()
+    @IBOutlet weak var hudView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +47,21 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension DetailsViewController: ViewModelDelegate {
-    
     func showHud() {
-        
+        hudView.startAnimating()
+        hudView.isHidden = false
+    }
+    
+    func hideHud() {
+        hudView.stopAnimating()
+        hudView.isHidden = true
+        UIView.animate(withDuration: 0.5) {
+            self.tableView.alpha = 1
+        }
     }
     
     func showAlert(with message: String) {
-        
+        showAlert(title: nil, message: message)
     }
     
     func refreshData() {

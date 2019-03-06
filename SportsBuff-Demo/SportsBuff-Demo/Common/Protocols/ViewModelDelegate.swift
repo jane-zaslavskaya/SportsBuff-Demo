@@ -11,5 +11,6 @@ import Foundation
 protocol ViewModelDelegate: class {
     func refreshData()
     func showHud()
+    func hideHud()
     func showAlert(with message: String)
 }
