@@ -17,4 +17,8 @@ struct HomePreviewCollectionViewCellModel {
             cell.imageView.loadImage(from: url)
         }
     }
+    
+    init(with channel: Channel) {
+        imageUrl = channel.thumbnailUrl
+    }
 }
