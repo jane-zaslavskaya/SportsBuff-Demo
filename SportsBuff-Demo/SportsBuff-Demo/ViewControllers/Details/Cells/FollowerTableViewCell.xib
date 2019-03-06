@@ -19,9 +19,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="378" height="108.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7jh-nF-q9M">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7jh-nF-q9M">
                         <rect key="frame" x="15" y="10" width="80" height="88.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="9Mh-M9-mOA"/>
                         </constraints>
@@ -89,8 +89,8 @@
                 <outlet property="ageLabel" destination="IH6-n0-gTO" id="BZh-N7-2cp"/>
                 <outlet property="ageView" destination="t7E-gV-VPZ" id="XP1-Zv-5Ou"/>
                 <outlet property="avatarImageView" destination="7jh-nF-q9M" id="rkE-nn-x7d"/>
-                <outlet property="countryLabel" destination="kZ6-8J-FMZ" id="IPq-mA-wd7"/>
                 <outlet property="nameLabel" destination="1mH-B0-WxR" id="WGs-ME-LSf"/>
+                <outlet property="regionLabel" destination="kZ6-8J-FMZ" id="6sd-yp-Aq0"/>
             </connections>
             <point key="canvasLocation" x="97.599999999999994" y="144.3778110944528"/>
         </tableViewCell>
