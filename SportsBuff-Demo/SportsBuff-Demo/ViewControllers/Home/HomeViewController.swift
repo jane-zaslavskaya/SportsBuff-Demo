@@ -29,11 +29,15 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 50
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.homePreviewCellIdentifier, for: indexPath)
-         return cell
+        let model = HomePreviewCollectionViewCellModel(imageUrl: "https://homepages.cae.wisc.edu/~ece533/images/airplane.png")
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.homePreviewCellIdentifier, for: indexPath) as? HomePreviewCollectionViewCell {
+            model.setup(on: cell)
+            return cell
+        }
+        return UICollectionViewCell()
     }
 }
