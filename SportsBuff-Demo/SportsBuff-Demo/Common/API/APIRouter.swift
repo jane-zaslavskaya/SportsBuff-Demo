@@ -12,10 +12,11 @@ import Alamofire
 enum APIRouter: APIConfiguration {
     
     case channels
+    case followers
     
     var method: HTTPMethod {
         switch self {
-        case .channels:
+        case .channels, .followers:
             return .get
         }
     }
@@ -24,12 +25,14 @@ enum APIRouter: APIConfiguration {
         switch self {
         case .channels:
             return "http://jsonplaceholder.typicode.com/photos"
+        case .followers:
+            return "https://uinames.com/api/?amount=10&ext=1"
         }
     }
     
     var parameters: Parameters? {
         switch self {
-        case .channels:
+        case .channels, .followers:
             return nil
         }
     }

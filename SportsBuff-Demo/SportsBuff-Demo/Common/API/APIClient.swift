@@ -23,4 +23,7 @@ class APIClient {
         performRequest(route: APIRouter.channels, completion: completion)
     }
     
+    static func getFollowers(completion: @escaping (Result<[Follower]>) -> Void) {
+        performRequest(route: APIRouter.followers, completion: completion)
+    }
 }
