@@ -44,6 +44,7 @@ class HomeViewController: UIViewController {
         navigationItem.leftBarButtonItems = [profileItem]
         navigationItem.rightBarButtonItems = [achievementsItem, statisticsItem, historyItem]
         navigationItem.titleView = searchBar
+        navigationController?.navigationBar.barTintColor = UIColor(hexString: "121212")
 
     }
 }
