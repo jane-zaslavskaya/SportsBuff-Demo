@@ -32,13 +32,13 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mH-B0-WxR">
-                        <rect key="frame" x="110" y="33.5" width="42" height="21"/>
+                        <rect key="frame" x="110" y="33.5" width="145.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ6-8J-FMZ">
-                        <rect key="frame" x="110" y="54.5" width="35.5" height="16"/>
+                        <rect key="frame" x="110" y="54.5" width="145.5" height="16"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7E-gV-VPZ">
                         <rect key="frame" x="260.5" y="34.5" width="102.5" height="40"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="41 yrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH6-n0-gTO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="41 yrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH6-n0-gTO">
                                 <rect key="frame" x="20" y="6.5" width="62.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,7 +79,9 @@
                     <constraint firstAttribute="bottom" secondItem="7jh-nF-q9M" secondAttribute="bottom" constant="10" id="XSz-Ag-781"/>
                     <constraint firstItem="7jh-nF-q9M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="afm-Ac-rQn"/>
                     <constraint firstItem="kZ6-8J-FMZ" firstAttribute="leading" secondItem="1mH-B0-WxR" secondAttribute="leading" id="ika-Op-Vcu"/>
+                    <constraint firstItem="t7E-gV-VPZ" firstAttribute="leading" secondItem="1mH-B0-WxR" secondAttribute="trailing" constant="5" id="m6L-Ui-LC8"/>
                     <constraint firstItem="kZ6-8J-FMZ" firstAttribute="top" secondItem="7jh-nF-q9M" secondAttribute="centerY" id="nKl-ZK-c8W"/>
+                    <constraint firstItem="t7E-gV-VPZ" firstAttribute="leading" secondItem="kZ6-8J-FMZ" secondAttribute="trailing" constant="5" id="rik-z7-ch2"/>
                     <constraint firstItem="1mH-B0-WxR" firstAttribute="bottom" secondItem="7jh-nF-q9M" secondAttribute="centerY" id="vwm-is-lTh"/>
                 </constraints>
             </tableViewCellContentView>
