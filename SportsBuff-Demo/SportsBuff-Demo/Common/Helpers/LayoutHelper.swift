@@ -11,29 +11,34 @@ import UIKit
 
 class LayoutHelper {
     
-    struct K {
-        static let itemInset: CGFloat = 1.0
+    var collectionViewWidth: CGFloat = 0.0
+    var insets: InterItem = InterItem()
+    
+    init(with collectionViewWidth: CGFloat, insets: InterItem = InterItem()) {
+        self.collectionViewWidth = collectionViewWidth
+        self.insets = insets
     }
     
-    static private func getScreenWidth() -> CGFloat {
-        return UIScreen.main.bounds.size.width
-    }
-    
-    static private func getBigSegmentHeight() -> CGFloat {
-        let height = getScreenWidth() / 3 * 2
+    private func getBigSegmentHeight() -> CGFloat {
+        let height = collectionViewWidth * 2 / 3
         return height
     }
     
-    static private func getSmallSegmentHeight() -> CGFloat {
-        let height = getScreenWidth() / 3
+    private func getSmallSegmentHeight() -> CGFloat {
+        let height = collectionViewWidth / 3
         return height
     }
     
-    static func getSmallSegmentFrame(lastFrame: CGRect) -> CGRect {
-        return CGRect(x: 0, y: lastFrame.maxY + K.itemInset, width: getScreenWidth(), height: getSmallSegmentHeight())
+    func getSmallSegmentFrame(lastFrame: CGRect) -> CGRect {
+        return CGRect(x: 0, y: lastFrame.maxY + insets.vertical,
+                      width: collectionViewWidth,
+                      height: getSmallSegmentHeight())
     }
     
-    static func getBigSegmentFrame(lastFrame: CGRect) -> CGRect {
-        return CGRect(x: 0, y: lastFrame.maxY + K.itemInset, width: getScreenWidth(), height: getBigSegmentHeight())
+    func getBigSegmentFrame(lastFrame: CGRect) -> CGRect {
+        return CGRect(x: 0, y: lastFrame.maxY + insets.vertical,
+                      width: collectionViewWidth,
+                      height: getBigSegmentHeight())
     }
 }
+  
