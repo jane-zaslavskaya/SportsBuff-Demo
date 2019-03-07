@@ -29,6 +29,8 @@ class HomeViewController: UIViewController {
         setupNavigation()
         viewModel.configure(with: self)
         collectionView.register(UINib(nibName: K.homePreviewCellIdentifier, bundle: nil), forCellWithReuseIdentifier:  K.homePreviewCellIdentifier)
+        let layout = HomePreviewLayout()
+        collectionView.collectionViewLayout = layout
         navigationController?.navigationBar.tintColor = .white
     }
     
