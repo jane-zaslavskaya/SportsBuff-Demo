@@ -26,9 +26,25 @@ class HomeViewController: UIViewController {
     }
     
     func configure() {
+        setupNavigation()
         viewModel.configure(with: self)
         collectionView.register(UINib(nibName: K.homePreviewCellIdentifier, bundle: nil), forCellWithReuseIdentifier:  K.homePreviewCellIdentifier)
         navigationController?.navigationBar.tintColor = .white
+    }
+    
+    
+    func setupNavigation() {
+        let profileItem = UIBarButtonItem(with: UIImage(named: "person"))
+        let searchBar = UISearchBar()
+        searchBar.barStyle = .black
+        searchBar.placeholder = "Search for content"
+        let achievementsItem = UIBarButtonItem(with: UIImage(named: "trophy"))
+        let historyItem = UIBarButtonItem(with: UIImage(named: "time"))
+        let statisticsItem = UIBarButtonItem(with: UIImage(named: "podium"))
+        navigationItem.leftBarButtonItems = [profileItem]
+        navigationItem.rightBarButtonItems = [achievementsItem, statisticsItem, historyItem]
+        navigationItem.titleView = searchBar
+
     }
 }
 
