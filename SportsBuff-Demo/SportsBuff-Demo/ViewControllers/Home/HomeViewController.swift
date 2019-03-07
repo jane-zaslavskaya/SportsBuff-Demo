@@ -34,17 +34,17 @@ class HomeViewController: UIViewController {
     
     
     func setupNavigation() {
-        let profileItem = UIBarButtonItem(with: UIImage(named: "person"))
+        let profileItem = UIBarButtonItem(with: UIImage(.person))
         let searchBar = UISearchBar()
         searchBar.barStyle = .black
         searchBar.placeholder = "Search for content"
-        let achievementsItem = UIBarButtonItem(with: UIImage(named: "trophy"))
-        let historyItem = UIBarButtonItem(with: UIImage(named: "time"))
-        let statisticsItem = UIBarButtonItem(with: UIImage(named: "podium"))
+        let achievementsItem = UIBarButtonItem(with: UIImage(.trophy))
+        let historyItem = UIBarButtonItem(with: UIImage(.time))
+        let statisticsItem = UIBarButtonItem(with: UIImage(.podium))
         navigationItem.leftBarButtonItems = [profileItem]
         navigationItem.rightBarButtonItems = [achievementsItem, statisticsItem, historyItem]
         navigationItem.titleView = searchBar
-        navigationController?.navigationBar.barTintColor = UIColor(hexString: "121212")
+        navigationController?.navigationBar.barTintColor = UIColor(.navigationGray)
 
     }
 }
@@ -84,7 +84,7 @@ extension HomeViewController: ViewModelDelegate {
     func hideHud() {
         hudView.stopAnimating()
         hudView.isHidden = true
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.2) {
             self.collectionView.alpha = 1
         }
     }

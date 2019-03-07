@@ -17,6 +17,8 @@
 		3F39E22622303A2700E0430B /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39E22522303A2700E0430B /* UIBarButtonItem+Extension.swift */; };
 		3F39E22822312E0400E0430B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39E22722312E0400E0430B /* UIColor+Hex.swift */; };
 		3F39E22A22312E3400E0430B /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39E22922312E3400E0430B /* String+Range.swift */; };
+		3F39E22C2231637100E0430B /* UIColor+SportsBuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39E22B2231637100E0430B /* UIColor+SportsBuff.swift */; };
+		3F39E22E2231654300E0430B /* UIImage+SportsBuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39E22D2231654300E0430B /* UIImage+SportsBuff.swift */; };
 		3F71E206222EADD800AA512D /* HomePreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E205222EADD800AA512D /* HomePreviewLayout.swift */; };
 		3F71E208222EAEE300AA512D /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E207222EAEE300AA512D /* CGRect+Extension.swift */; };
 		3F71E20A222EBEA300AA512D /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E209222EBEA300AA512D /* LayoutHelper.swift */; };
@@ -65,6 +67,8 @@
 		3F39E22522303A2700E0430B /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		3F39E22722312E0400E0430B /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		3F39E22922312E3400E0430B /* String+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
+		3F39E22B2231637100E0430B /* UIColor+SportsBuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SportsBuff.swift"; sourceTree = "<group>"; };
+		3F39E22D2231654300E0430B /* UIImage+SportsBuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SportsBuff.swift"; sourceTree = "<group>"; };
 		3F71E205222EADD800AA512D /* HomePreviewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePreviewLayout.swift; sourceTree = "<group>"; };
 		3F71E207222EAEE300AA512D /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
 		3F71E209222EBEA300AA512D /* LayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 				3F39E22522303A2700E0430B /* UIBarButtonItem+Extension.swift */,
 				3F39E22722312E0400E0430B /* UIColor+Hex.swift */,
 				3F39E22922312E3400E0430B /* String+Range.swift */,
+				3F39E22B2231637100E0430B /* UIColor+SportsBuff.swift */,
+				3F39E22D2231654300E0430B /* UIImage+SportsBuff.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -532,6 +538,7 @@
 				3F71E20E222EC39900AA512D /* ImageLoader.swift in Sources */,
 				3F39E2182230186500E0430B /* FollowerTableViewCellModel.swift in Sources */,
 				3F39E21E223019B700E0430B /* DetailsViewModel.swift in Sources */,
+				3F39E22E2231654300E0430B /* UIImage+SportsBuff.swift in Sources */,
 				3F71E20A222EBEA300AA512D /* LayoutHelper.swift in Sources */,
 				3F39E22822312E0400E0430B /* UIColor+Hex.swift in Sources */,
 				3F39E22622303A2700E0430B /* UIBarButtonItem+Extension.swift in Sources */,
@@ -547,6 +554,7 @@
 				3F71E20C222EC33400AA512D /* UIImageView+ImageLoader.swift in Sources */,
 				3FE257BA222D58D50084F69A /* HomeViewController.swift in Sources */,
 				3F71E217222ECD2200AA512D /* APIClient.swift in Sources */,
+				3F39E22C2231637100E0430B /* UIColor+SportsBuff.swift in Sources */,
 				3F71E206222EADD800AA512D /* HomePreviewLayout.swift in Sources */,
 				3F71E211222EC49100AA512D /* KingfisherImageLoader.swift in Sources */,
 			);
