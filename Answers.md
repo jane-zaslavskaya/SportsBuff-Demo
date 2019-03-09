@@ -19,4 +19,5 @@ In my opinion UI design needs to be improved.
 2. Age displaying looks really strange on DetailsViewController. It seems like a button but I can't get this functionality.  
 I think it would be better to append age as a part of subtitle text under the user name, so it will be something like "23 yrs, France".
 Instead, right view can be used as "Follow/add a friend/etc." action button.  
+
 Also it takes a lot of time to load 5000 photos from the url. It's necessary to add pagination in this case.  
