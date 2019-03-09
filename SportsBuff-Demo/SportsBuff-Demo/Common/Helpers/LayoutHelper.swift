@@ -9,7 +9,12 @@
 import Foundation
 import UIKit
 
-class LayoutHelper {
+protocol LayoutHelperProtocol {
+    func getSmallSegmentFrame(lastFrame: CGRect) -> CGRect
+    func getBigSegmentFrame(lastFrame: CGRect) -> CGRect
+}
+
+class LayoutHelper: LayoutHelperProtocol {
     
     var collectionViewWidth: CGFloat = 0.0
     var insets: InterItem = InterItem()

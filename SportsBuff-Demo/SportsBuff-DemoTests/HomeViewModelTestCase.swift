@@ -9,6 +9,7 @@
 import XCTest
 
 class HomeViewModelTestCase: XCTestCase {
+    
     func testNumberOfModels() {
         //given
         let ch1 = Channel(thumbnailUrl: "https://google.com/test1.jpg")

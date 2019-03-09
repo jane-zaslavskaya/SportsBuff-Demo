@@ -9,6 +9,7 @@
 import XCTest
 
 class FollowerTableViewCellModelTestCase: XCTestCase {
+    
     func testInitializationOfViewModel() {
         //given
         let f1 = Follower(name: "name1", region: "region1", age: 21, photo: "https://google.com/test1.jpg")

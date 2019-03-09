@@ -9,6 +9,7 @@
 import XCTest
 
 class HomePreviewCollectionViewCellModelTestCase: XCTestCase {
+    
     func testInitializationOfViewModel() {
         //given
         let ch1 = Channel(thumbnailUrl: "https://google.com/test1.jpg")
